@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Serach by different Serach engine</title>
+</head>
+<body>
+		<input type="text" id="user"  size="70" placeholder="Serach for everything">
+		<br><br>
+		<button onclick="google()">Serach on Google</button>
+		<button onclick="yahoo()">Serach on Yahho</button>
+		<button onclick="youtube()">Serach on Youtube</button>
+
+		<script>
+		function google()
+		{
+		var input=document.getElementById("user").value;
+		window.open("https://www.google.com/search?q=" +input , "_blank");
+	    } 
+
+	   function yahoo()
+	   {
+	   	var input=document.getElementById("user").value;
+	   	window.open("https://in.search.yahoo.com//search?q="+input,"_blank");
+	   }
+
+	   function youtube()
+	   {
+	   	var input=document.getElementById("user").value;
+	   	window.open("https://youtube.com//search?q="+input,"_blank");
+	   }
+</script>
+	
+</body>
+</html>
+	
+</html>
